@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cosmic Coffee Shop | Brewed in Orbit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <canvas id="cosmos-canvas"></canvas>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1 class="glitch" data-text="COSMIC COFFEE">COSMIC COFFEE</h1>
+          <p class="subtitle">Start your morning orbit right.</p>
+          <div class="scroll-indicator">
+            <span>↓</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section coffee-magic" id="coffee-section">
+        <div class="container">
+          <h2>Nebula Roast</h2>
+          <p>Beans harvested from the event horizon.</p>
+          <div class="cup-container">
+            <div class="bean-stream"></div>
+            <div class="cup">
+              <div class="steam"></div>
+              <div class="steam"></div>
+              <div class="steam"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section recipes" id="recipes-section">
+        <div class="container">
+          <h2>Galactic Blends</h2>
+          <div class="ingredients-stage">
+            <div class="ingredient" id="ing-1">Stardust Sugar</div>
+            <div class="ingredient" id="ing-2">Moon Milk</div>
+            <div class="ingredient" id="ing-3">Dark Matter Cocoa</div>
+            <div class="mixing-bowl">The Perfect Brew</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section order" id="order-section">
+        <div class="container glass-panel">
+          <h2>Initiate Launch Sequence</h2>
+          <form id="order-form">
+            <div class="input-group">
+              <label>Mission Commander</label>
+              <input type="text" placeholder="Your Name" required />
+            </div>
+            <div class="input-group">
+              <label>Fuel Type</label>
+              <select>
+                <option>Espresso Supernova</option>
+                <option>Milky Way Latte</option>
+                <option>Black Hole Americano</option>
+              </select>
+            </div>
+            <button type="submit" class="launch-btn">LAUNCH ORDER 🚀</button>
+          </form>
+        </div>
+      </section>
+
+      <footer>
+        <p>© 2024 Cosmic Coffee Shop. No gravity required.</p>
+      </footer>
+    </main>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
